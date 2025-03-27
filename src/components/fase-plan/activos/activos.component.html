@@ -1,0 +1,208 @@
+<div class="container py-4">
+
+    <h2 class="mb-4 text-primary">8.1.2 Identificación de Activos de Información Críticos</h2>
+  
+    <!-- Índice Interno -->
+    <div class="mb-4 p-3 bg-light border-start border-4 border-primary rounded">
+      <h5 class="fw-bold mb-3 text-dark">📑 Navegación rápida</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#alcance" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">🔹 8.1.2.1 Alcance</a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#clasificacion" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">🔹 8.1.2.2 Clasificación de los Tipos de Activos</a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#criticidad" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">🔹 8.1.2.3 Criterios de Criticidad</a>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Acordeones -->
+    <div class="accordion" id="accordionActivos">
+  
+      <!-- Alcance -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#alcance">
+            8.1.2.1 Alcance
+          </button>
+        </h2>
+        <div id="alcance" class="accordion-collapse collapse show" data-bs-parent="#accordionActivos">
+          <div class="accordion-body text-muted">
+            <p>Este modelo de gestión de riesgos se enfoca en los activos de información críticos de las PYMEs del sector T.I., incluyendo:</p>
+            <ul>
+              <li>Procesos de desarrollo, operación y soporte tecnológico</li>
+              <li>Gestión de bases de datos y sistemas internos</li>
+              <li>Administración de redes, accesos y dispositivos conectados</li>
+              <li>Controles técnicos y organizativos de seguridad</li>
+            </ul>
+            <p>Quedan excluidos procesos administrativos no tecnológicos, sistemas offline y certificaciones formales ISO.</p>
+            <p>Este modelo está diseñado como herramienta teórica adaptable para PYMEs con recursos limitados, bajo el enfoque del ciclo PDCA.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Clasificación de Activos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#clasificacion">
+            Clasificación de los Tipos de Activos
+          </button>
+        </h2>
+        <div id="clasificacion" class="accordion-collapse collapse" data-bs-parent="#accordionActivos">
+          <div class="accordion-body text-muted">
+            <p>Los activos se clasifican por su naturaleza y función dentro de una PYME T.I., permitiendo estructurar el análisis de riesgos posterior.</p>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Descripción del Activo</th>
+                    <th>Ejemplo Específico</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Información</td>
+                    <td>Datos digitales con valor estratégico.</td>
+                    <td>Base de datos de clientes, contraseñas, logs.</td>
+                  </tr>
+                  <tr>
+                    <td>Personas</td>
+                    <td>Usuarios internos con acceso a información sensible.</td>
+                    <td>Desarrolladores, soporte, administradores de red.</td>
+                  </tr>
+                  <tr>
+                    <td>Software</td>
+                    <td>Aplicaciones para operación y gestión.</td>
+                    <td>CRM, ERP, Git, MySQL, herramientas SaaS.</td>
+                  </tr>
+                  <tr>
+                    <td>Hardware</td>
+                    <td>Equipos físicos relacionados con TI.</td>
+                    <td>Servidores, portátiles, routers, switches.</td>
+                  </tr>
+                  <tr>
+                    <td>Redes e Infraestructura</td>
+                    <td>Elementos de comunicación y conectividad.</td>
+                    <td>Firewalls, VPN, Wi-Fi, cableado estructurado.</td>
+                  </tr>
+                  <tr>
+                    <td>Servicios de TI</td>
+                    <td>Servicios digitales internos o contratados.</td>
+                    <td>Correo corporativo, backups, hosting, nube.</td>
+                  </tr>
+                  <tr>
+                    <td>Documentos</td>
+                    <td>Información estructurada y formalizada.</td>
+                    <td>Políticas, manuales, contratos, respaldos.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Criticidad -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#criticidad">
+            Criterios de Criticidad
+          </button>
+        </h2>
+        <div id="criticidad" class="accordion-collapse collapse" data-bs-parent="#accordionActivos">
+          <div class="accordion-body text-muted">
+            <p>Se aplica el modelo CIA (Confidencialidad, Integridad, Disponibilidad) para determinar la criticidad de cada activo.</p>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Activo Representativo</th>
+                    <th>Confidencialidad</th>
+                    <th>Integridad</th>
+                    <th>Disponibilidad</th>
+                    <th>Criticidad General</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Información</td>
+                    <td>Base de datos de clientes</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td><strong>Crítico</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Personas</td>
+                    <td>Soporte técnico</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                  </tr>
+                  <tr>
+                    <td>Software</td>
+                    <td>Gestor de proyectos</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td>Media</td>
+                    <td><strong>Crítico</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Hardware</td>
+                    <td>Servidor de respaldo</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td><strong>Crítico</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Redes</td>
+                    <td>Firewall perimetral</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td><strong>Crítico</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Servicios TI</td>
+                    <td>Correo corporativo</td>
+                    <td>Alta</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                  </tr>
+                  <tr>
+                    <td>Documentos</td>
+                    <td>Políticas internas</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><strong>Criterios de valoración:</strong></p>
+            <ul>
+              <li><strong>Alta:</strong> Impacto severo en operación, imagen o legalidad.</li>
+              <li><strong>Media:</strong> Impacto importante pero no catastrófico.</li>
+              <li><strong>Baja:</strong> Pérdida tolerable o fácilmente recuperable.</li>
+            </ul>
+            <p><strong>Criticidad General:</strong></p>
+            <ul>
+              <li><strong>Crítico:</strong> Al menos 2 criterios en nivel Alto.</li>
+              <li><strong>Alta:</strong> Uno en Alto, los demás Medios.</li>
+              <li><strong>Moderada o baja:</strong> Ningún criterio en Alto.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
