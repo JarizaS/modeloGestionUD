@@ -1,92 +1,189 @@
 
 
-<div class="sidebar d-flex flex-column bg-dark text-white p-3">
-    <h5 class="text-center fw-bold mb-4">🛡️ Modelo Gestion de Riesgos PYMES</h5>
+<button class="btn btn-primary d-lg-none position-fixed top-0 start-0 m-3 z-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarResponsive">
+  ☰ Menú
+</button>
+
+<!-- SIDEBAR FIJO (solo visible en pantallas grandes) -->
+<div class="d-none d-lg-flex flex-column bg-dark text-white p-3 vh-100 position-fixed" style="width: 280px;">
+  <a routerLink="/" class="text-white text-center text-decoration-none">
+    <h5 class="fw-bold mb-4">🛡️ Modelo Gestión de Riesgos PYMES</h5>
+  </a>
+  <hr class="border-light my-3">
+
+  <div class="accordion accordion-flush" id="sidebarAccordionLg">
+
+    <!-- 8.1 FASE PLAN -->
+    <div class="accordion-item bg-dark border-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#fasePlanLg">
+          📘 FASE PLAN
+        </button>
+      </h2>
+      <div id="fasePlanLg" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionLg">
+        <div class="accordion-body p-0">
+          <ul class="nav flex-column">
+            <li><a class="nav-link text-white" routerLink="/fase-plan/contexto">Análisis del Contexto</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-plan/activos">Activos de Información</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-plan/amenazas-vulnerabilidades">Amenazas y Vulnerabilidades</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-plan/evaluacion-riesgos">Brechas vs ISO27001</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-plan/brechas">Necesidades de Mejora</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-plan/modelo-gestion">Modelo de Gestión</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8.2 FASE DO -->
+    <div class="accordion-item bg-dark border-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseDoLg">
+          ⚙️ FASE DO
+        </button>
+      </h2>
+      <div id="faseDoLg" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionLg">
+        <div class="accordion-body p-0">
+          <ul class="nav flex-column">
+            <li><a class="nav-link text-white" routerLink="/fase-do/diagramas">Diagramas del Modelo</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-do/control-respuesta">Políticas y Procedimientos</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-do/politicas">Plan de Implementación</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-do/implementacion">Propuesta Tecnológica</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8.3 FASE CHECK -->
+    <div class="accordion-item bg-dark border-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseCheckLg">
+          📊 FASE CHECK
+        </button>
+      </h2>
+      <div id="faseCheckLg" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionLg">
+        <div class="accordion-body p-0">
+          <ul class="nav flex-column">
+            <li><a class="nav-link text-white" routerLink="/fase-check/cumplimiento">Cumplimiento</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-check/indicadores">Indicadores</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-check/impacto">Impacto</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-check/validacion">Casos Simulados</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8.4 FASE ACT -->
+    <div class="accordion-item bg-dark border-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseActLg">
+          🔁 FASE ACT
+        </button>
+      </h2>
+      <div id="faseActLg" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionLg">
+        <div class="accordion-body p-0">
+          <ul class="nav flex-column">
+            <li><a class="nav-link text-white" routerLink="/fase-act/actualizacion">Actualización</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-act/recomendaciones">Recomendaciones</a></li>
+            <li><a class="nav-link text-white" routerLink="/fase-act/retroalimentacion">Retroalimentación</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <hr class="border-light my-3">
-    <div class="accordion accordion-flush" id="sidebarAccordion">
-  
+    <a class="nav-link text-white" routerLink="/contacto">📬 Contacto</a>
+  </div>
+</div>
+
+<!-- SIDEBAR OFFCANVAS para móviles (solo visible en pantallas menores a lg) -->
+<div class="offcanvas offcanvas-start bg-dark text-white d-lg-none" tabindex="-1" id="sidebarResponsive">
+  <div class="offcanvas-header border-bottom border-light">
+    <h5 class="offcanvas-title">🛡️ Modelo Gestión de Riesgos PYMES</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body p-3">
+    <div class="accordion accordion-flush" id="sidebarAccordionMobile">
+
       <!-- 8.1 FASE PLAN -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#fasePlan">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#fasePlanMobile">
             📘 FASE PLAN
           </button>
         </h2>
-        <div id="fasePlan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+        <div id="fasePlanMobile" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionMobile">
           <div class="accordion-body p-0">
             <ul class="nav flex-column">
-              <li><a class="nav-link" routerLink="/fase-plan/contexto">Análisis del Contexto de las PYMES del Sector T.I.</a></li>
-              <li><a class="nav-link" routerLink="/fase-plan/activos">Identificación de Activos de Información Criticos</a></li>
-              <li><a class="nav-link" routerLink="/fase-plan/amenazas-vulnerabilidades">Evaluacion de Amenazas y Vulnerabilidades Actuales</a></li>
-              <li><a class="nav-link" routerLink="/fase-plan/evaluacion-riesgos">Análisis de Brechas con respecto a ISO27001</a></li>
-              <li><a class="nav-link" routerLink="/fase-plan/brechas">Identificacion de Necesidades de Mejora</a></li>
-              <li><a class="nav-link" routerLink="/fase-plan/modelo-gestion">Definición del Modelo de Gestión de Riesgos</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-plan/contexto">Análisis del Contexto de las PYMES del Sector T.I.</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-plan/activos">Identificación de Activos de Información Criticos</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-plan/amenazas-vulnerabilidades">Evaluación de Amenazas y Vulnerabilidades Actuales</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-plan/evaluacion-riesgos">Análisis de Brechas con respecto a ISO27001</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-plan/brechas">Identificación de Necesidades de Mejora</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-plan/modelo-gestion">Definición del Modelo de Gestión de Riesgos</a></li>
             </ul>
           </div>
         </div>
       </div>
-  
+
       <!-- 8.2 FASE DO -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseDo">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseDoMobile">
             ⚙️ FASE DO
           </button>
         </h2>
-        <div id="faseDo" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+        <div id="faseDoMobile" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionMobile">
           <div class="accordion-body p-0">
             <ul class="nav flex-column">
-              <li><a class="nav-link" routerLink="/fase-do/diagramas">Diagramas del Modelo</a></li>
-              <li><a class="nav-link" routerLink="/fase-do/control-respuesta">Definicion de Politicas y Procedimientos de Seguridad</a></li>
-              <li><a class="nav-link" routerLink="/fase-do/politicas">Plan de implementacion (Teorico o Ficticio)</a></li>
-              <li><a class="nav-link" routerLink="/fase-do/implementacion">Propuesta Tecnologica</a></li>
-              <!-- <li><a class="nav-link" routerLink="/fase-do/tecnologia">Herramientas Recomendadas</a></li>
-              <li><a class="nav-link" routerLink="/fase-do/ia">Consideración de IA</a></li> -->
+              <li><a class="nav-link text-white" routerLink="/fase-do/diagramas">Diagramas del Modelo</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-do/control-respuesta">Definición de Políticas y Procedimientos de Seguridad</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-do/politicas">Plan de Implementación (Teórico o Ficticio)</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-do/implementacion">Propuesta Tecnológica</a></li>
             </ul>
           </div>
         </div>
       </div>
-  
+
       <!-- 8.3 FASE CHECK -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseCheck">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseCheckMobile">
             📊 FASE CHECK
           </button>
         </h2>
-        <div id="faseCheck" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+        <div id="faseCheckMobile" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionMobile">
           <div class="accordion-body p-0">
             <ul class="nav flex-column">
-              <li><a class="nav-link" routerLink="/fase-check/cumplimiento">Cumplimiento de Controles</a></li>
-              <li><a class="nav-link" routerLink="/fase-check/indicadores">Indicadores de Seguridad</a></li>
-              <li><a class="nav-link" routerLink="/fase-check/impacto">Evaluación de Impacto</a></li>
-              <li><a class="nav-link" routerLink="/fase-check/validacion">Validación Teórica Mediante Casos Simulados</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-check/cumplimiento">Cumplimiento de Controles</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-check/indicadores">Indicadores de Seguridad</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-check/impacto">Evaluación de Impacto</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-check/validacion">Validación Teórica Mediante Casos Simulados</a></li>
             </ul>
           </div>
         </div>
       </div>
-  
+
       <!-- 8.4 FASE ACT -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseAct">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faseActMobile">
             🔁 FASE ACT
           </button>
         </h2>
-        <div id="faseAct" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+        <div id="faseActMobile" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordionMobile">
           <div class="accordion-body p-0">
             <ul class="nav flex-column">
-              <li><a class="nav-link" routerLink="/fase-act/actualizacion">Actualización de Controles Frente a Nuevas Amenazas</a></li>
-              <li><a class="nav-link" routerLink="/fase-act/recomendaciones">Recomendaciones</a></li>
-              <li><a class="nav-link" routerLink="/fase-act/retroalimentacion">Mecanismos de Retroalimentación y Revision Periodica</a></li>
-              <!-- <li><a class="nav-link" routerLink="/fase-act/integraciones">Integraciones Futuras</a></li> -->
+              <li><a class="nav-link text-white" routerLink="/fase-act/actualizacion">Actualización de Controles Frente a Nuevas Amenazas</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-act/recomendaciones">Recomendaciones</a></li>
+              <li><a class="nav-link text-white" routerLink="/fase-act/retroalimentacion">Mecanismos de Retroalimentación y Revisión Periódica</a></li>
             </ul>
           </div>
         </div>
       </div>
-  
+
       <hr class="border-light my-3">
       <a class="nav-link text-white" routerLink="/contacto">📬 Contacto</a>
+
     </div>
   </div>
-  
+</div>
