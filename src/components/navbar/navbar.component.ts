@@ -10,10 +10,14 @@ declare var bootstrap: any;
 })
 export class NavbarComponent {
   closeOffcanvas(event: Event) {
-    const el = event.target as HTMLElement;
+    let el = event.target as HTMLElement;
   
-    // Solo cerramos si el click fue en un <a>
-    if (el.tagName.toLowerCase() === 'a') {
+    // Buscar hacia arriba el <a> si se hace clic en un hijo (como <h5>)
+    while (el && el.tagName.toLowerCase() !== 'a') {
+      el = el.parentElement!;
+    }
+  
+    if (el && el.tagName.toLowerCase() === 'a') {
       const offcanvasEl = document.getElementById('sidebarResponsive');
       if (offcanvasEl) {
         const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
