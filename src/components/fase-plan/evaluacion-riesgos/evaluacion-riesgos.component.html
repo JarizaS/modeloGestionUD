@@ -1,1 +1,123 @@
-<p>evaluacion-riesgos works!</p>
+<div class="container py-4">
+    <!-- Título de la página -->
+    <h2 class="mb-4 text-primary">8.1.4 Análisis de Brechas con respecto a ISO/IEC 27001</h2>
+  
+    <!-- Índice Interno -->
+    <div class="mb-4 p-3 bg-light border-start border-4 border-primary rounded">
+      <h5 class="fw-bold mb-3 text-dark">📑 Navegación rápida</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#brechasISO" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">🔹 8.1.4 Análisis de Brechas con respecto a ISO/IEC 27001</a>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Acordeón para mostrar la información -->
+    <div class="accordion" id="accordionBrechas">
+  
+      <!-- Descripción del análisis de brechas -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#brechasISO">
+            8.1.4 Análisis de Brechas con respecto a ISO/IEC 27001
+          </button>
+        </h2>
+        <div id="brechasISO" class="accordion-collapse collapse show" data-bs-parent="#accordionBrechas">
+          <div class="accordion-body text-muted">
+            <p>Con el fin de evaluar el grado de alineación de la organización con los requerimientos de la norma ISO/IEC 27001, se realizó un análisis de brechas (Gap Analysis) que permite identificar los controles de seguridad implementados, los que se encuentran parcialmente desarrollados y aquellos ausentes. Este análisis proporciona una visión clara del estado actual y orienta la definición de acciones correctivas dentro del modelo propuesto.</p>
+            <p>Con base en los resultados del análisis de riesgos y el análisis de brechas frente a la norma ISO/IEC 27001, se propone un conjunto de controles de seguridad que permitan mitigar los riesgos identificados y cerrar las brechas detectadas en los activos críticos de las PYMEs del sector T.I. Los controles seleccionados provienen del Anexo A de la norma y han sido priorizados por su aplicabilidad, viabilidad y relevancia para el contexto operativo de estas organizaciones. A continuación, se presenta la tabla con los controles propuestos y su correspondencia con los activos y riesgos asociados:</p>
+            
+            <!-- Tabla de controles de ISO 27001 -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Control ISO 27001</th>
+                    <th>Descripción</th>
+                    <th>Activo(s) Protegido(s)</th>
+                    <th>Riesgo Mitigado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A.5.1.1 – Política de seguridad</td>
+                    <td>Establecer una política formal de seguridad de la información</td>
+                    <td>Toda la organización</td>
+                    <td>Falta de lineamientos claros para proteger la información</td>
+                  </tr>
+                  <tr>
+                    <td>A.6.1.1 – Funciones y responsabilidades</td>
+                    <td>Definir y asignar roles de seguridad dentro de la organización</td>
+                    <td>Personal de TI y soporte</td>
+                    <td>Ausencia de responsables designados para la gestión de riesgos</td>
+                  </tr>
+                  <tr>
+                    <td>A.7.2.2 – Concientización y formación</td>
+                    <td>Implementar un programa de formación en seguridad</td>
+                    <td>Personal de soporte técnico</td>
+                    <td>Ingeniería social / errores humanos</td>
+                  </tr>
+                  <tr>
+                    <td>A.9.2.1 – Gestión de cuentas de usuario</td>
+                    <td>Controlar el acceso mediante cuentas individuales con privilegios adecuados</td>
+                    <td>Plataforma de gestión, base de datos</td>
+                    <td>Accesos no autorizados</td>
+                  </tr>
+                  <tr>
+                    <td>A.9.4.1 – Uso de sistemas de acceso seguro</td>
+                    <td>Implementar autenticación robusta (contraseñas, 2FA)</td>
+                    <td>Correo corporativo, CRM</td>
+                    <td>Suplantación / Phishing</td>
+                  </tr>
+                  <tr>
+                    <td>A.12.3.1 – Copias de respaldo</td>
+                    <td>Establecer respaldos periódicos, probados y documentados</td>
+                    <td>Servidor de respaldo, base de datos</td>
+                    <td>Pérdida de datos / ransomware</td>
+                  </tr>
+                  <tr>
+                    <td>A.12.6.1 – Gestión de vulnerabilidades</td>
+                    <td>Aplicar actualizaciones y parches de seguridad regularmente</td>
+                    <td>Firewall, software, servidores</td>
+                    <td>Exploits conocidos por software desactualizado</td>
+                  </tr>
+                  <tr>
+                    <td>A.13.1.1 – Protección de información en tránsito</td>
+                    <td>Cifrar la información enviada por correo o transferida por red</td>
+                    <td>Datos sensibles en correo y nube</td>
+                    <td>Interceptación de datos</td>
+                  </tr>
+                  <tr>
+                    <td>A.13.2.3 – Segregación de redes</td>
+                    <td>Separar redes internas de servicios públicos (DMZ, VLANs)</td>
+                    <td>Infraestructura de red, firewall</td>
+                    <td>Movimiento lateral de amenazas / intrusiones</td>
+                  </tr>
+                  <tr>
+                    <td>A.14.2.1 – Validación de entradas</td>
+                    <td>Validar entradas en formularios y consultas de bases de datos</td>
+                    <td>Plataforma de gestión de proyectos</td>
+                    <td>Inyección SQL / corrupción de datos</td>
+                  </tr>
+                  <tr>
+                    <td>A.16.1.1 – Reporte de incidentes</td>
+                    <td>Crear un proceso para notificar y registrar incidentes de seguridad</td>
+                    <td>Toda la organización</td>
+                    <td>Falta de respuesta organizada ante incidentes</td>
+                  </tr>
+                  <tr>
+                    <td>A.18.1.4 – Evaluación de riesgos periódica</td>
+                    <td>Evaluar riesgos de seguridad al menos una vez al año</td>
+                    <td>Todos los activos</td>
+                    <td>Modelo desactualizado frente a nuevas amenazas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

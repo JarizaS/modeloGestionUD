@@ -1,1 +1,128 @@
-<p>politicas works!</p>
+<div class="container py-4">
+
+    <h2 class="mb-4 text-primary">Plan de Implementación Teórico</h2>
+  
+    <div class="mb-4 p-3 bg-light border-start border-4 border-primary rounded">
+      <h5 class="fw-bold mb-3 text-dark">📑 Navegación rápida</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapsePlan" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Descripción del Plan
+          </a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseActividades" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Actividades Semanales
+          </a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseRecomendaciones" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Recomendaciones Finales
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="accordion" id="planAccordion">
+  
+      <!-- Descripción del Plan -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPlan">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlan" aria-expanded="true">
+            Descripción del Plan
+          </button>
+        </h2>
+        <div id="collapsePlan" class="accordion-collapse collapse show" aria-labelledby="headingPlan" data-bs-parent="#planAccordion">
+          <div class="accordion-body text-muted">
+            <p>La implementación del modelo de gestión de riesgos en una PYME del sector T.I. se ha planificado para una duración estimada de 6 semanas. Este plan es teórico y busca ser adaptable, práctico y viable para organizaciones con recursos limitados.</p>
+            <p>El enfoque del plan equilibra aspectos técnicos, humanos y organizacionales. Incluye desde la revisión de políticas hasta la capacitación del personal, siguiendo los principios del ciclo PDCA.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Actividades Semanales -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingActividades">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActividades" aria-expanded="false">
+            Actividades Semanales
+          </button>
+        </h2>
+        <div id="collapseActividades" class="accordion-collapse collapse" aria-labelledby="headingActividades" data-bs-parent="#planAccordion">
+          <div class="accordion-body text-muted">
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle text-center">
+                <thead class="table-light">
+                  <tr>
+                    <th>Semana</th>
+                    <th>Actividad Principal</th>
+                    <th>Descripción</th>
+                    <th>Responsable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Semana 1</td>
+                    <td>Revisión y aprobación de políticas</td>
+                    <td>Presentar políticas internas de seguridad y obtener aval de la dirección.</td>
+                    <td>Responsable de seguridad / Dirección</td>
+                  </tr>
+                  <tr>
+                    <td>Semana 2</td>
+                    <td>Clasificación de activos y asignación de roles</td>
+                    <td>Identificar activos críticos, asignar responsables y documentar.</td>
+                    <td>Administrador de TI</td>
+                  </tr>
+                  <tr>
+                    <td>Semana 3</td>
+                    <td>Configuración técnica inicial</td>
+                    <td>Implementar copias de seguridad, configurar firewall y gestionar accesos.</td>
+                    <td>Soporte técnico / Infraestructura</td>
+                  </tr>
+                  <tr>
+                    <td>Semana 4</td>
+                    <td>Implementación de controles organizativos</td>
+                    <td>Activar autenticación 2FA, establecer procesos de reporte de incidentes y validación de accesos.</td>
+                    <td>Responsable de seguridad</td>
+                  </tr>
+                  <tr>
+                    <td>Semana 5</td>
+                    <td>Capacitación al personal</td>
+                    <td>Realizar talleres de concientización y simulacros de incidentes.</td>
+                    <td>Área de seguridad / Dirección</td>
+                  </tr>
+                  <tr>
+                    <td>Semana 6</td>
+                    <td>Evaluación inicial del modelo</td>
+                    <td>Medir cumplimiento de controles, identificar debilidades y proponer ajustes.</td>
+                    <td>Comité de seguridad / Dirección</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Recomendaciones Finales -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingRecomendaciones">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRecomendaciones" aria-expanded="false">
+            Recomendaciones Finales
+          </button>
+        </h2>
+        <div id="collapseRecomendaciones" class="accordion-collapse collapse" aria-labelledby="headingRecomendaciones" data-bs-parent="#planAccordion">
+          <div class="accordion-body text-muted">
+            <ul>
+              <li>🗓️ Realizar reuniones semanales de avance para seguimiento efectivo.</li>
+              <li>🔁 Los resultados de la semana 6 deben alimentar la fase <strong>Check</strong> del ciclo PDCA.</li>
+              <li>🛠️ Enfocar la implementación en controles críticos y de alto impacto.</li>
+              <li>📊 Establecer indicadores básicos de evaluación desde el inicio.</li>
+            </ul>
+            <p>Este plan actúa como una hoja de ruta clara para que las PYMEs comiencen una gestión estructurada de su seguridad de la información, sin necesidad de grandes inversiones.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

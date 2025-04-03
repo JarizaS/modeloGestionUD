@@ -1,1 +1,129 @@
-<p>control-respuesta works!</p>
+<div class="container py-4">
+    <h2 class="mb-4 text-primary">8.2.2 Definición de Políticas y Procedimientos de Seguridad</h2>
+  
+    <div class="mb-4 p-3 bg-light border-start border-4 border-primary rounded">
+      <h5 class="fw-bold mb-3 text-dark">📑 Navegación rápida</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseUsoAceptable" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Políticas de Uso Aceptable de los Sistemas
+          </a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseRespaldos" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Políticas de Respaldos y Recuperación
+          </a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseGestionIncidentes" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Política de Gestión de Incidentes de Seguridad
+          </a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseProcedimientos" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Procedimientos Operativos Relacionados
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="accordion" id="accordionPoliticas">
+      
+      <!-- 8.2.2.1 Políticas de Uso Aceptable de los Sistemas -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingUsoAceptable">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsoAceptable" aria-expanded="true" aria-controls="collapseUsoAceptable">
+            8.2.2.1 Políticas de Uso Aceptable de los Sistemas
+          </button>
+        </h2>
+        <div id="collapseUsoAceptable" class="accordion-collapse collapse show" aria-labelledby="headingUsoAceptable" data-bs-parent="#accordionPoliticas">
+          <div class="accordion-body text-muted">
+            <ul>
+              <li>Define las condiciones bajo las cuales los empleados pueden acceder y utilizar los recursos informáticos (equipos, redes, software y servicios).</li>
+              <li>Prohíbe expresamente el uso de sistemas para fines personales, actividades ilícitas o no autorizadas.</li>
+              <li>Establece responsabilidades individuales sobre el uso adecuado de las credenciales y la protección de la información.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 8.2.2.2 Políticas de Respaldos y Recuperación -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingRespaldos">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRespaldos" aria-expanded="false" aria-controls="collapseRespaldos">
+            8.2.2.2 Políticas de Respaldos y Recuperación
+          </button>
+        </h2>
+        <div id="collapseRespaldos" class="accordion-collapse collapse" aria-labelledby="headingRespaldos" data-bs-parent="#accordionPoliticas">
+          <div class="accordion-body text-muted">
+            <ul>
+              <li>Establece la obligación de realizar copias de seguridad periódicas de los sistemas y bases de datos críticos.</li>
+              <li>Define la periodicidad de los respaldos, el medio utilizado, la retención de copias y los procedimientos de restauración.</li>
+              <li>Indica que los respaldos deben probarse de forma regular para garantizar su funcionalidad.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 8.2.2.3 Política de Gestión de Incidentes de Seguridad -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingGestionIncidentes">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGestionIncidentes" aria-expanded="false" aria-controls="collapseGestionIncidentes">
+            8.2.2.3 Política de Gestión de Incidentes de Seguridad
+          </button>
+        </h2>
+        <div id="collapseGestionIncidentes" class="accordion-collapse collapse" aria-labelledby="headingGestionIncidentes" data-bs-parent="#accordionPoliticas">
+          <div class="accordion-body text-muted">
+            <ul>
+              <li>Define qué se considera un incidente de seguridad y establece el protocolo de notificación inmediata.</li>
+              <li>Establece los roles y responsabilidades durante la atención de incidentes.</li>
+              <li>Obliga a documentar todos los eventos, acciones realizadas y aprendizajes generados.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 8.2.2.4 Procedimientos Operativos Relacionados -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingProcedimientos">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProcedimientos" aria-expanded="false" aria-controls="collapseProcedimientos">
+            8.2.2.4 Procedimientos Operativos Relacionados
+          </button>
+        </h2>
+        <div id="collapseProcedimientos" class="accordion-collapse collapse" aria-labelledby="headingProcedimientos" data-bs-parent="#accordionPoliticas">
+          <div class="accordion-body text-muted">
+            <p>Para apoyar la ejecución de las políticas anteriores, se proponen los siguientes procedimientos:</p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Procedimiento</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Procedimiento para el cambio de contraseñas</td>
+                  <td>Define cuándo y cómo los usuarios deben actualizar sus credenciales.</td>
+                </tr>
+                <tr>
+                  <td>Procedimiento de reporte de incidentes</td>
+                  <td>Detalla el canal de comunicación, el formato del reporte y los tiempos de respuesta esperados.</td>
+                </tr>
+                <tr>
+                  <td>Procedimiento de recuperación desde backups</td>
+                  <td>Instrucciones paso a paso para restaurar sistemas o datos ante una pérdida o incidente.</td>
+                </tr>
+                <tr>
+                  <td>Procedimiento de alta/baja de usuarios</td>
+                  <td>Proceso formal para crear o eliminar cuentas, asignar permisos y revocar accesos.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Estas políticas y procedimientos representan el marco operativo básico de seguridad de la información para la PYME, asegurando que las acciones del personal estén alineadas con los objetivos del modelo. Su implementación contribuye a reducir riesgos operacionales, mejorar la trazabilidad de los procesos y fomentar una cultura organizacional responsable y consciente en el manejo de la información.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

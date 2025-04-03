@@ -1,1 +1,160 @@
-<p>amenazas-vulnerabilidades works!</p>
+<div class="container py-4">
+    <!-- Título de la página -->
+    <h2 class="mb-4 text-primary">8.1.3 Evaluación de Amenazas y Vulnerabilidades Actuales</h2>
+  
+    <!-- Índice Interno -->
+    <div class="mb-4 p-3 bg-light border-start border-4 border-primary rounded">
+      <h5 class="fw-bold mb-3 text-dark">📑 Navegación rápida</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#matrizEvaluacion" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">🔹 8.1.3.2 Matriz de Evaluación de Riesgos</a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#evaluacionPorActivo" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">🔹 8.1.3.3 Evaluación por Activo</a>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Acordeones -->
+    <div class="accordion" id="accordionEvaluacion">
+  
+      <!-- Matriz de Evaluación de Riesgos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#matrizEvaluacion">
+            8.1.3.2 Matriz de Evaluación de Riesgos
+          </button>
+        </h2>
+        <div id="matrizEvaluacion" class="accordion-collapse collapse show" data-bs-parent="#accordionEvaluacion">
+          <div class="accordion-body text-muted">
+            <p>Para determinar el nivel de riesgo asociado a cada amenaza identificada, se utiliza una matriz de evaluación cualitativa que combina dos variables fundamentales: el impacto que tendría la materialización de la amenaza sobre el activo, y la probabilidad de que dicha amenaza ocurra dadas las condiciones actuales de seguridad. Esta herramienta permite clasificar los riesgos en categorías que orientan la toma de decisiones y la priorización de controles, de acuerdo con el contexto operativo y tecnológico de las PYMEs del sector T.I.</p>
+            <p>Esta matriz combina los niveles de impacto y probabilidad para estimar el nivel de riesgo asociado a cada amenaza identificada. Se utiliza un enfoque cualitativo, adaptado al contexto de las PYMEs del sector T.I., que permite clasificar los riesgos como Bajo, Moderado, Alto o Crítico.</p>
+  
+            <!-- Matriz de Riesgos -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm">
+                <thead class="table-light">
+                  <tr>
+                    <th>Impacto / Probabilidad</th>
+                    <th>Baja</th>
+                    <th>Media</th>
+                    <th>Alta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Baja</td>
+                    <td>Bajo</td>
+                    <td>Moderado</td>
+                    <td>Moderado</td>
+                  </tr>
+                  <tr>
+                    <td>Media</td>
+                    <td>Moderado</td>
+                    <td>Alto</td>
+                    <td>Alto</td>
+                  </tr>
+                  <tr>
+                    <td>Alta</td>
+                    <td>Moderado</td>
+                    <td>Alto</td>
+                    <td>Crítico</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Evaluación por Activo -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#evaluacionPorActivo">
+            8.1.3.3 Evaluación por Activo
+          </button>
+        </h2>
+        <div id="evaluacionPorActivo" class="accordion-collapse collapse" data-bs-parent="#accordionEvaluacion">
+          <div class="accordion-body text-muted">
+            <p>A continuación, se presenta una tabla que relaciona los activos de información críticos con sus respectivas amenazas potenciales y vulnerabilidades asociadas, identificadas en función del contexto actual de las PYMEs del sector T.I. Esta evaluación permite estimar el nivel de riesgo combinando el impacto que tendría la materialización de la amenaza sobre el activo y la probabilidad de que ocurra, considerando las condiciones actuales de seguridad en este tipo de organizaciones. Esta información servirá de base para la posterior definición de controles de mitigación adecuados.</p>
+            
+            <!-- Tabla Evaluación por Activo -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Activo Crítico</th>
+                    <th>Amenaza Potencial</th>
+                    <th>Vulnerabilidad Asociada</th>
+                    <th>Impacto</th>
+                    <th>Probabilidad</th>
+                    <th>Nivel de Riesgo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Base de datos de clientes</td>
+                    <td>Fuga de información</td>
+                    <td>Accesos mal configurados / falta de cifrado</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td><strong>Crítico</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Personal de soporte técnico</td>
+                    <td>Ingeniería social</td>
+                    <td>Ausencia de formación en seguridad</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td>Alto</td>
+                  </tr>
+                  <tr>
+                    <td>Plataforma de gestión</td>
+                    <td>Inyección SQL</td>
+                    <td>Falta de validación en entradas de usuario</td>
+                    <td>Alta</td>
+                    <td>Media</td>
+                    <td>Alto</td>
+                  </tr>
+                  <tr>
+                    <td>Servidor de respaldo</td>
+                    <td>Pérdida de datos por ransomware</td>
+                    <td>Software desactualizado / backups no verificados</td>
+                    <td>Alta</td>
+                    <td>Media</td>
+                    <td>Alto</td>
+                  </tr>
+                  <tr>
+                    <td>Firewall perimetral</td>
+                    <td>Acceso no autorizado</td>
+                    <td>Reglas mal configuradas / firmware obsoleto</td>
+                    <td>Alta</td>
+                    <td>Alta</td>
+                    <td><strong>Crítico</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Correo corporativo (nube)</td>
+                    <td>Phishing / Suplantación</td>
+                    <td>Falta de autenticación en dos pasos (2FA)</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td>Alto</td>
+                  </tr>
+                  <tr>
+                    <td>Políticas de seguridad (doc.)</td>
+                    <td>Modificación no autorizada</td>
+                    <td>Archivos sin restricción de permisos</td>
+                    <td>Media</td>
+                    <td>Media</td>
+                    <td>Moderado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

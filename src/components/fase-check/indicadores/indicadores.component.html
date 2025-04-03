@@ -1,1 +1,124 @@
-<p>indicadores works!</p>
+<div class="container py-4">
+
+    <h2 class="mb-4 text-primary">Indicadores de Seguridad</h2>
+  
+    <div class="mb-4 p-3 bg-light border-start border-4 border-primary rounded">
+      <h5 class="fw-bold mb-3 text-dark">📑 Navegación rápida</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseIndicadoresIntro" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Descripción General
+          </a>
+        </li>
+        <li class="list-group-item ps-0 bg-light border-0">
+          <a href="#collapseKPIs" data-bs-toggle="collapse" class="text-decoration-none fw-semibold text-primary">
+            🔹 Indicadores Propuestos
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="accordion" id="indicadoresAccordion">
+  
+      <!-- Introducción -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingIndicadoresIntro">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIndicadoresIntro" aria-expanded="true">
+            Descripción General
+          </button>
+        </h2>
+        <div id="collapseIndicadoresIntro" class="accordion-collapse collapse show" aria-labelledby="headingIndicadoresIntro" data-bs-parent="#indicadoresAccordion">
+          <div class="accordion-body text-muted">
+            <p>Para evaluar la eficacia del modelo de gestión de riesgos, se han definido indicadores clave (KPIs) que permiten medir el desempeño de los controles implementados, identificar áreas de mejora y dar seguimiento a la evolución del sistema de seguridad.</p>
+            <p>Estos indicadores fueron seleccionados considerando:</p>
+            <ul>
+              <li>📏 Viabilidad de medición en PYMEs</li>
+              <li>🎯 Relevancia frente a los objetivos del modelo</li>
+              <li>🔗 Relación directa con controles y riesgos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Indicadores propuestos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingKPIs">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKPIs" aria-expanded="false">
+            Indicadores Propuestos
+          </button>
+        </h2>
+        <div id="collapseKPIs" class="accordion-collapse collapse" aria-labelledby="headingKPIs" data-bs-parent="#indicadoresAccordion">
+          <div class="accordion-body text-muted">
+  
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle text-center">
+                <thead class="table-light">
+                  <tr>
+                    <th>Indicador</th>
+                    <th>Descripción</th>
+                    <th>Unidad de Medida</th>
+                    <th>Frecuencia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>% de controles implementados</td>
+                    <td>Mide el avance en la ejecución del modelo de seguridad</td>
+                    <td>Porcentaje</td>
+                    <td>Trimestral</td>
+                  </tr>
+                  <tr>
+                    <td>% de incidentes reportados</td>
+                    <td>Evalúa la capacidad de detección y reporte</td>
+                    <td>Porcentaje mensual</td>
+                    <td>Mensual</td>
+                  </tr>
+                  <tr>
+                    <td>Tiempo de respuesta ante incidentes</td>
+                    <td>Mide la agilidad del equipo ante eventos</td>
+                    <td>Horas / minutos</td>
+                    <td>Por evento</td>
+                  </tr>
+                  <tr>
+                    <td>% de copias de seguridad verificadas</td>
+                    <td>Evalúa la confiabilidad de los respaldos</td>
+                    <td>Porcentaje</td>
+                    <td>Mensual</td>
+                  </tr>
+                  <tr>
+                    <td>% de usuarios capacitados</td>
+                    <td>Mide el alcance de formación en seguridad</td>
+                    <td>Porcentaje del personal</td>
+                    <td>Semestral</td>
+                  </tr>
+                  <tr>
+                    <td>Frecuencia de evaluación de riesgos</td>
+                    <td>Determina actualización del modelo frente a amenazas</td>
+                    <td>Número de evaluaciones</td>
+                    <td>Anual</td>
+                  </tr>
+                  <tr>
+                    <td>% de autenticaciones seguras</td>
+                    <td>Mide la adopción de 2FA u otros mecanismos seguros</td>
+                    <td>Porcentaje</td>
+                    <td>Trimestral</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+  
+            <p>Estos indicadores pueden gestionarse con herramientas simples como hojas de cálculo y reportes internos. Más adelante, podrían integrarse con soluciones automatizadas si la madurez de la empresa lo permite.</p>
+            <p>Su monitoreo constante ayuda a:</p>
+            <ul>
+              <li>✅ Verificar la efectividad de los controles</li>
+              <li>⚠️ Detectar debilidades o desviaciones</li>
+              <li>📌 Tomar decisiones informadas y oportunas</li>
+            </ul>
+            <p>Establecer estos KPIs fortalece el ciclo de mejora continua (PDCA) y permite evaluar la madurez en seguridad con base en evidencia real y medible.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
